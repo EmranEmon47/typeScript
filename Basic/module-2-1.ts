@@ -21,6 +21,15 @@ const kgToGm = (value:string | number) : string | number | undefined => {
 const result1 =kgToGm(1000) as number
 const result2 = kgToGm("1000") as string
 
+type CustomError = {
+    message: string
+}
+try{
+
+}catch(error){
+    console.log((error as CustomError).message);
+}
+
 }
 
 
